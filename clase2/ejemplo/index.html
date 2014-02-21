@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>control state</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<form action="">
+		<div class="form-group validado" id="error">
+			<label class="control-label" for="inputSuccess">Input with success</label>
+			<input type="text" class="form-control" id="inputSuccess" required placeholder="nombre" title="este campo es obligatorio">
+			<small class="mensaje_escondio">este campo es requerido</small>
+		</div>
+		<div class="form-group validado" id="succes">
+			<label class="control-label" for="inputWarning">correo</label>
+			<input type="email" class="form-control " id="inputWarning">
+		</div>
+		<div class="form-group validado" id="info">
+			<label class="control-label" for="inputError">Input with error</label>
+			<input type="text" class="form-control " id="inputError">
+		</div>
+	<input type="submit" value="enviar">
+	</form>
+	</div>
+	
+</body>
+</html>

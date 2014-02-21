@@ -1,0 +1,239 @@
+body{
+	background: #E6E6E6;
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12{
+	color:#fff;
+	border:1px solid #fff;
+}
+
+.col-xs-1{
+	background :green;
+}
+.col-xs-2{
+	background :#81DAF5;
+}
+.col-xs-3{
+	background :#AC58FA;
+}
+.col-xs-4{
+	background :#40FF00;
+}
+.col-xs-5{
+	background :#424242;
+}
+.col-xs-6{
+	background :#393B0B;
+}
+.col-xs-7{
+	background :#0A2A29;
+}
+.col-xs-8{
+	background :#08088A;
+}
+.col-xs-9{
+	background :#610B5E;
+}
+.col-xs-10{
+	background :#070719;
+}
+.col-xs-11{
+	background :#0B6138;
+}
+.col-xs-12{
+	background :#FFBF00;
+}
+
+
+
+
+@media (min-width: 768px) { 
+	body{
+		background:green;
+	}
+	
+	.col-sm-1,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-sm-7,
+	.col-sm-8,
+	.col-sm-9,
+	.col-sm-10,
+	.col-sm-11,
+	.col-sm-12{
+		border:1px solid #fff;
+		color:#fff;
+	}
+
+	.col-sm-1{
+				background :#FFBF00;
+	}
+	.col-sm-2{
+		background :#0B6138;
+	}
+	.col-sm-3{
+		background :#070719;
+	}
+	.col-sm-4{
+		background :#610B5E;
+	}
+	.col-sm-5{
+		background :#08088A;
+	}
+	.col-sm-6{
+		background :#0A2A29;
+	}
+	.col-sm-7{
+		background :#393B0B;
+	}
+	.col-sm-8{
+		background :#424242;
+	}
+	.col-sm-9{
+		background :#40FF00;
+	}
+	.col-sm-10{
+		background :#AC58FA;
+	}
+	.col-sm-11{
+		background :#81DAF5;
+	}
+	.col-sm-12{
+		background :green;
+	}
+ }
+
+@media (min-width: 992px) { 
+	body{
+		background:yellow;
+	}
+
+	.col-md-1,
+	.col-md-2,
+	.col-md-3,
+	.col-md-4,
+	.col-md-5,
+	.col-md-6,
+	.col-md-7,
+	.col-md-8,
+	.col-md-9,
+	.col-md-10,
+	.col-md-11,
+	.col-md-12{
+		border:1px solid #fff;
+		color:#fff;
+	}
+
+	.col-md-1{
+				background :#070E06;
+	}
+	.col-md-2{
+		background :#0E1D0C;
+	}
+	.col-md-3{
+		background :#162B12;
+	}
+	.col-md-4{
+		background :#1D3918;
+	}
+	.col-md-5{
+		background :#24471F;
+	}
+	.col-md-6{
+		background :#2B5625;
+	}
+	.col-md-7{
+		background :#32642B;
+	}
+	.col-md-8{
+		background :#3A7231;
+	}
+	.col-md-9{
+		background :#418137;
+	}
+	.col-md-10{
+		background :#6EBC62;
+	}
+	.col-md-11{
+		background :#CAE7C6;
+	}
+	.col-md-12{
+		background :#F2F9F1;
+	}
+
+
+
+ }
+
+ @media (min-width: 1200px) { 
+	body{
+		background:#754316;
+	}
+	.col-lg-1,
+	.col-lg-2,
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5,
+	.col-lg-6,
+	.col-lg-7,
+	.col-lg-8,
+	.col-lg-9,
+	.col-lg-10,
+	.col-lg-11,
+	.col-lg-12{
+		border:1px solid #fff;
+		color:#fff;
+	}
+
+	.col-lg-1{
+				background :#FCF2EE;
+	}
+	.col-lg-2{
+		background :#ECB298;
+	}
+	.col-lg-3{
+		background :#DC7241;
+	}
+	.col-lg-4{
+		background :#AC4C20;
+	}
+	.col-lg-5{
+		background :#562610;
+	}
+	.col-lg-6{
+		background :#451E0D;
+	}
+	.col-lg-7{
+		background :#220F06;
+	}
+	.col-lg-8{
+		background :#DF7F53;
+	}
+	.col-lg-9{
+		background :#BE5423;
+	}
+	.col-lg-10{
+		background :#565516;
+	}
+	.col-lg-11{
+		background :#751f16;
+	}
+	.col-lg-12{
+		background :#6c3e16;
+	}
+ }
+

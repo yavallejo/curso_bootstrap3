@@ -1,0 +1,215 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Bootstrap Twitter</title>
+
+		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div id="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Aprendiendoando</h1>
+					<h3 class="inverted">Bootstrap 3</h3>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+
+					
+					<img src="images/portada.png" height="289" width="902" alt="">
+					
+				</section>
+				
+				<section>
+					<h2>Clase 4 #Bootstrap 3</h2>
+					<p>&nbsp;</p>
+					<p>
+						En esta sección Colocaremos en practica la teoría que vimos en la clase pasada<br>
+						
+					</p>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Estructura</h2>
+						<p>
+							Conoceremos los requerimientos necesarios para tener nuestra pagina con #Bootstrap.
+							
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Html5</h2>
+						<p>Se requiere el doctype html5</p>
+						<figure>
+							<img src="images/html5.png" height="92" width="206" alt="">
+						</figure>
+					</section>
+					<section>
+						<h2>Mobile first !important</h2>
+						<p>Esta filosofía de trabajo es una de las grandes mejoras que tiene esta versión de #Bootstrap3</p>
+						<figure>
+							<img src="images/meta.png" height="225" width="737" alt="">
+						</figure>
+						<a href="#/2" class="image">
+							<img width="78" height="100" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+                 <section>
+					<section>
+						<h2>Imágenes Responsive</h2>
+						<p>
+							Para tener nuestras imágenes responsive solo debemos añadir la siguiente clase a nuestras imágenes
+						</p>
+						<figure>
+							<img src="images/img_responsive.png" height="41" width="641" alt="">
+						</figure>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Centrando nuestro contenido</h2>
+						<p>
+							Si deseamos tener nuestro contenido en el centro con respecto a la ventana del navegador utilizamos la clase
+						</p>
+						<figure>
+							
+							<img src="images/container.png" height="71" width="228" alt="">
+						</figure>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Rejillas</h2>
+						<p>
+							Bootstrap incluye una rejilla o retícula fluída pensada para móviles y que cumple con el diseño web responsive. Esta retícula crece hasta 12 columnas a medida que crece el tamaño de la pantalla del dispositivo
+							
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Media queries</h2>
+						<p>Bootstrap utiliza las siguientes media queries para establecer los diferentes puntos en los que la rejilla se transforma para adaptarse a cada dispositivo.</p>
+						<figure>
+							<img src="images/media_queries.png" height="191" width="684" alt="">
+						</figure>
+					</section>
+					<section>
+						<h2>Características de cada rejilla</h2>
+						<p>Esta tabla muestra las diferentes caracteristicas que nos tare el sistema de rejillas de #bootstrap3</p>
+						<figure>
+						<img src="images/sistema_grillas.png" height="400" width="720" alt="">
+						</figure>
+					</section>
+				</section>
+				
+				<section>
+					<h1>Gracias</h1>
+					<p>
+
+						
+						<a href="http://www.aprendiendoando.com/" target="_blank">aprendiendoando</a><br><br>
+						<a href="https://twitter.com/yavallejo" target="_blank">Twitter</a><br><br>
+						<a href="http://www.facebook.com/yavallejo" target="_blank">Facebook</a><br><br>
+
+					</p>
+					
+					<h6 class="inverted">Agradecimientos a Hakim El Hattab / hakim.se Por este maravilloso script en Html5</h6>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script src="js/reveal.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			// Fires when a slide with data-state=customevent is activated
+			Reveal.addEventListener( 'customevent', function() {
+				alert( '"customevent" has fired' );
+			} );
+
+			// Fires each time a new slide is activated
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.indexh & event.indexv
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Loops the presentation, defaults to false
+				loop: false,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>
