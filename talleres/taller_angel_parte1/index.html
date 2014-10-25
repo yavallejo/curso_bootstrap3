@@ -1,0 +1,171 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Sublime text2</title>
+
+		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+		
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div id="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Girucode</h1>
+					<h3 class="inverted">Taller Bootstrap </h3>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+                    <p>
+				  <!-- <img src="images/rostro.jpg" alt=""> -->
+				  <img src="images/rostro.jpg" height="107" width="104" alt="">
+				  <br>
+				  <p>
+				   Yan Arlex Vallejo
+				  </p>
+				  <a href="https://twitter.com/yavallejo" target="_blank">@yavallejo</a> <br>
+				  <a href="http://www.aprendiendoando.com" target="_blank">Aprendiendoando</a>
+
+					</p>
+					
+					
+				</section>
+				<section>
+					<h1>GiruCode</h1>
+					<h3 class="inverted">Sublime text + bootstrap</h3>
+					<img src="images/portada.png" height="289" width="902" alt="">
+					
+				</section>
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Sublime text 2</h2>
+					<p>
+					 Mi editor favorito<br>
+						
+					</p>
+						<a href="#/2/1" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+						</a>
+					</section>
+					<section>
+						<h2>Packages</h2>
+						<p>Packages que no pueden faltar para trabajar en el mundo web.</p>
+						<img src="images/mobile_first.png" height="384" width="600" alt="">
+						
+					</section>
+					<section>
+						<h2>Mis favoritos</h2>
+						<ul>
+							<li><a href="https://sublime.wbond.net/installation#Manual" target="_blank">Package Control</a></li>
+							<li><a href="http://docs.emmet.io/" target="_blank">Emmet</a></li>
+							<li><a href="https://github.com/titoBouzout/SideBarEnhancements" target="_blank">SidebarEnchancements</a></li>
+							<li><a href="https://github.com/rmaksim/Sublime-Text-2-Goto-CSS-Declaration" target="_blank">Goto-css-declaration</a></li>
+							<li><a href="https://github.com/BoundInCode/AutoFileName" target="_blank">Autofilename</a></li>
+							<li><a href="https://github.com/devtellect/sublime-twitter-bootstrap-snippets" target="_blank">Twitter Bootstrap</a></li>
+							<li><a href="https://sublime.wbond.net/packages/Nettuts%2B%20Fetch" target="_blank">Nettus + fetch</a></li>
+						</ul>
+					</section>
+					
+				</section>
+                     <section>
+						<h2>Temas</h2>
+						<p>Personalizar un poco la apariencia de mi editor <br>
+
+							<a href="https://github.com/thinkpixellab/flatland" target="_blank">Theme Flatland</a>
+                          </p>
+                    </section>
+                    
+				
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script src="js/reveal.js"></script>
+		
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			// Fires when a slide with data-state=customevent is activated
+			Reveal.addEventListener( 'customevent', function() {
+				alert( '"customevent" has fired' );
+			} );
+
+			// Fires each time a new slide is activated
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.indexh & event.indexv
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Loops the presentation, defaults to false
+				loop: false,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,198 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Bootstrap Twitter</title>
+
+		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div id="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				
+				<section>
+					<h2>Bootstrap Twitter</h2>
+					<p>&nbsp;</p>
+					<img src="images/portada.png" width="708" height="300" >
+					
+				</section>
+				
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Caracteristicas de Bootstrap</h2>
+						<p>
+							Algunas caracteristicas que hacen de bootstrap una
+							excelente alternativa para realizar nuestros diseños
+						</p>
+						<a href="#/2/1" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+						</a>
+					</section>
+					<section>
+						<h2>Uso de Responsive Web Design</h2>
+						<p>Permite Crear diseños responsivos</p>
+						<a class="test" href="#">
+							<img width="400" height="300" src="images/diseno_responsivo.png">
+						</a>
+						
+					</section>
+					<section>
+						<h2>Usa Estandares Como Html5 / Css3</h2>
+						<p>Esta desarrollado para trabajar con html5 y css3</p>
+						<a class="test" href="#">
+							<img width="300" height="205" src="images/html5css3.png">
+						</a>
+					</section>
+					<section>
+						<h2>Integracion con librerias JS</h2>
+						<p>Permite integrar facilmente el uso de librerias como Jquery</p>
+						<a class="test" href="http://jquery.com">
+							<img width="400" height="200" src="images/jquery.png">
+						</a>
+						
+					</section>
+					<section>
+						<h2>Utilizacion de Less</h2>
+						<p>el lenguaje de hojas de estilo dinámico</p>
+						<a class="test" href="#">
+							<img width="400" height="200" src="images/less.png">
+						</a>
+						
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Nuestras Herramientas</h2>
+						<p>
+							En este espacio mostraremos las herramientas de trabajo
+							 indispensables para trabajar con Boostrap.(mis preferidas)
+						</p>
+						<a href="#/2/1" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+						</a>
+					</section>
+					
+					<section>
+						<h2>Bootstrap twitter 2.3.2</h2>
+						<p>Descargar nuestros archivos de la pagina oficial</p>
+						<a class="test" href="http://twitter.github.com/bootstrap/" target="_blank">
+							<img width="825" height="300" src="images/portada.png">
+						</a>
+					</section>
+					
+					<section>
+						<h2>Muchas Ganas</h2>
+						<p>Y lo mas importante, Ganas de Aprender nuevas formas de crear la web</p>
+						<a class="test" href="#">
+							<img width="300" height="350" src="images/ganas.png">
+						</a>
+						
+					</section>
+				</section>
+				
+
+				
+				<section>
+					<h1>Gracias</h1>
+					<p>
+                          <a href="http://codejobs.biz/" target="_blank">Girucode</a><br><br>
+						<a href="https://twitter.com/yavallejo" target="_blank">Twitter</a><br><br>
+						<a href="http://www.facebook.com/yavallejo" target="_blank">Facebook</a><br><br>
+
+					</p>
+					
+					<h6 class="inverted">Agradecimientos a Hakim El Hattab / hakim.se Por este maravilloso script en Html5</h6>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script src="js/reveal.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			// Fires when a slide with data-state=customevent is activated
+			Reveal.addEventListener( 'customevent', function() {
+				alert( '"customevent" has fired' );
+			} );
+
+			// Fires each time a new slide is activated
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.indexh & event.indexv
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Loops the presentation, defaults to false
+				loop: false,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>

@@ -8,6 +8,13 @@ body{
 	color:red;
 }
 
+@media (min-width: 480px){
+	body{
+	background: chocolate;
+
+    }
+}
+
 @media (min-width: 768px){
 	body{
 	background: #17644B;
